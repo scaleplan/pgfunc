@@ -8,6 +8,8 @@
         "ext-pdo_pgsql" : "*"
     },
     "autoload" : {
-        "psr-4" : {"PgFunc\\" : "src/PgFunc/"}
+        "psr-4" : {
+            "Scaleplan\\PgFunc\\" : "src/PgFunc/"
+        }
     }
 }
