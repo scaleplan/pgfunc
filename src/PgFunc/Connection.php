@@ -103,7 +103,7 @@ class Connection
 
         static $oldIsolationLevel;
         if (!$oldIsolationLevel) {
-            $oldIsolationLevel = $this->db->query('SHOW transaction_isolation')[0]['transaction_isolation'];
+            $oldIsolationLevel = $this->db->query('SHOW transaction_isolation')->fetch()[0];
         }
 
         $this->db->exec("SET SESSION CHARACTERISTICS AS TRANSACTION ISOLATION LEVEL $level");
