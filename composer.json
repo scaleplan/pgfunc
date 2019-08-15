@@ -1,5 +1,5 @@
 {
-    "name" : "scaleplan/pgfunc",
+    "name" : "red-defender/pgfunc",
     "description" : "PHP library for interacting with PostgreSQL connections, transactions and stored procedures",
     "license" : "LGPL-3.0",
     "require" : {
@@ -8,8 +8,6 @@
         "ext-pdo_pgsql" : "*"
     },
     "autoload" : {
-        "psr-4" : {
-            "Scaleplan\\PgFunc\\" : "src/PgFunc/"
-        }
+        "psr-4" : {"PgFunc\\" : "src/PgFunc/"}
     }
 }
